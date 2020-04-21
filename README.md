@@ -63,6 +63,9 @@ API参考
 &nbsp;&nbsp;&nbsp;&nbsp;返回的内容为[ [0xrrggbb, 0xrrggbb], [0xrrggbb, 0xrrggbb] ]的[[x维],[x维]]二维数组内容<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;如果位图原始数据被比如 setPixel() 修改了，则需要重新调用本函数来更新RGB二维数组<br/>
 
+十一、Bitmap.rgbToHexString(rgb)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;将 0xrrggbb 转换为 '#rrggbb'<br/>
+
 
 PS
 ========

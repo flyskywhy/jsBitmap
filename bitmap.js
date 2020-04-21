@@ -167,6 +167,12 @@ function BitMap()
         return rect;
     }
 
+    // 将 0xrrggbb 转换为 '#rrggbb'
+    this.rgbToHexString = function(rgb)
+    {
+        return '#' + (rgb & 0xFFFFFF).toString(16).padStart(6, '0');
+    }
+
     // 获取当前bitmap的datauri串，用于显示或发送到服务器端
     this.toBase64 = function()
     {
