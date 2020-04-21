@@ -203,6 +203,8 @@ function BitMap()
         _length_of_data = k - _length_of_header;
         this.width = this.getHeaderValue(BitMapFormat.biWidth);
         this.height = this.getHeaderValue(BitMapFormat.biHeight);
+        var biSizeImage = parseInt((this.width * 24 + 31) / 32) * 4 * this.height;
+        _length_to_fit = biSizeImage / this.height - (this.width * 3);
     }
 }
 
