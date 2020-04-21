@@ -1,6 +1,6 @@
 {
   "name": "glaciall-bitmap",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Manipulate bitmap image with pure JavaScript, and can be base64 format to display on web",
   "main": "bitmap.js",
   "scripts": {
@@ -16,7 +16,8 @@
     "bmp",
     "image",
     "jsbitmap",
-    "react"
+    "react",
+    "rgb"
   ],
   "contributors": [
     {
