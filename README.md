@@ -6,7 +6,7 @@ jsBitmap
 Install
 ========
 ```shell
-npm install --save jsBitmap
+npm install --save glaciall-bitmap
 ```
 
 Usage
@@ -14,7 +14,7 @@ Usage
 ```
 import {
     BitMap,
-} from 'jsBitmap';
+} from 'glaciall-bitmap';
 
 export class YourReactClass extends React.PureComponent {
     constructor(props, ctx) {
@@ -61,4 +61,4 @@ API参考
 
 PS
 ========
-[glaciall](https://github.com/glaciall) [authorized](https://github.com/glaciall/jsBitmap/pull/2#issuecomment-566343119) [flyskywhy](https://github.com/flyskywhy) to publish jsbitmap on npm.
+[glaciall](https://github.com/glaciall) [authorized](https://github.com/glaciall/jsBitmap/pull/2#issuecomment-566343119) [flyskywhy](https://github.com/flyskywhy) to publish glaciall-bitmap on npm.
