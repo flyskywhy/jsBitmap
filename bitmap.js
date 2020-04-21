@@ -150,6 +150,23 @@ function BitMap()
         return this.getBitmapBytes(offset, 3).reverse();
     }
 
+    // 预先使用 getPixel() 生成RGB数值的二维数组，便于调用者稍后以之快速定位像素，因为查表的速度远高于即时计算 getPixel()
+    // 返回的内容为[ [0xrrggbb, 0xrrggbb], [0xrrggbb, 0xrrggbb] ]的[[x维],[x维]]二维数组内容
+    // 如果位图原始数据被比如 setPixel() 修改了，则需要重新调用本函数来更新RGB二维数组
+    this.getRgbRect = function()
+    {
+        let rect = [];
+        for (let y = 0; y < this.height; y++) {
+            let rectX = [];
+            for (let x = 0; x < this.width; x++) {
+                const p = this.getPixel(x, y);
+                rectX.push((p[0] << 16) | (p[1] << 8) | p[2]);
+            }
+            rect.push(rectX);
+        }
+        return rect;
+    }
+
     // 获取当前bitmap的datauri串，用于显示或发送到服务器端
     this.toBase64 = function()
     {

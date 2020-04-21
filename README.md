@@ -58,6 +58,11 @@ API参考
 九、Bitmap.getPixel(x, y)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;获取位图的(x, y)位置的RGB值，返回的内容为[ rr, gg, bb ]的数组内容<br/>
 
+十、Bitmap.getRgbRect()<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;预先使用 getPixel() 生成RGB数值的二维数组，便于调用者稍后以之快速定位像素，因为查表的速度远高于即时计算 getPixel()<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;返回的内容为[ [0xrrggbb, 0xrrggbb], [0xrrggbb, 0xrrggbb] ]的[[x维],[x维]]二维数组内容<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;如果位图原始数据被比如 setPixel() 修改了，则需要重新调用本函数来更新RGB二维数组<br/>
+
 
 PS
 ========
