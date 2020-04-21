@@ -1,7 +1,13 @@
 jsBitmap
 ========
 
-基于Javascript的bitmap处理，并且将位图输出为base64编码以便于浏览器进行显示。
+基于Javascript的bitmap处理，并且将位图输出为base64编码以便于浏览器进行显示，代码超精简，低内存占用。
+
+Install
+========
+```shell
+npm install --save jsBitmap
+```
 
 Usage
 ========
@@ -51,3 +57,8 @@ API参考
 
 九、Bitmap.getPixel(x, y)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;获取位图的(x, y)位置的RGB值，返回的内容为[ rr, gg, bb ]的数组内容<br/>
+
+
+PS
+========
+[glaciall](https://github.com/glaciall) [authorized](https://github.com/glaciall/jsBitmap/pull/2#issuecomment-566343119) [flyskywhy](https://github.com/flyskywhy) to publish jsbitmap on npm.

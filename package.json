@@ -1,0 +1,38 @@
+{
+  "name": "jsbitmap",
+  "version": "1.0.0",
+  "description": "Manipulate bitmap image with pure JavaScript, and can be base64 format to display on web",
+  "main": "bitmap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flyskywhy/jsBitmap.git"
+  },
+  "keywords": [
+    "base64",
+    "bitmap",
+    "bmp",
+    "image",
+    "jsbitmap",
+    "react"
+  ],
+  "contributors": [
+    {
+      "name": "Matrixy Herry",
+      "email": "matrixy@me.com",
+      "url": "https://github.com/glaciall"
+    },
+    {
+      "name": "Li Zheng",
+      "email": "flyskywhy@gmail.com",
+      "url": "https://github.com/flyskywhy"
+    }
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/flyskywhy/jsBitmap/issues"
+  },
+  "homepage": "https://github.com/flyskywhy/jsBitmap#readme"
+}
